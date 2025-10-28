@@ -1,0 +1,7 @@
+p \
+"dat_2d_ashkin_teller_L4_ave_err" u 1:2:3 w e, \
+"dat_2d_ashkin_teller_L6_ave_err" u 1:2:3 w e, \
+"dat_2d_ashkin_teller_L8_ave_err" u 1:2:3 w e, \
+"dat_2d_ashkin_teller_L10_ave_err" u 1:2:3 w e, \
+"dat_2d_ashkin_teller_L12_ave_err" u 1:2:3 w e
+pause -1

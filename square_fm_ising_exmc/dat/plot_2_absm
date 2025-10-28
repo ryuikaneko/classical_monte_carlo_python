@@ -1,0 +1,14 @@
+p \
+"dat_2d_ising_L2_ave_err" u 1:2:3 w e, \
+"dat_2d_ising_L4_ave_err" u 1:2:3 w e, \
+"dat_2d_ising_L8_ave_err" u 1:2:3 w e, \
+"dat_2d_ising_L16_ave_err" u 1:2:3 w e
+pause -1
+
+p \
+"dat_2d_ising_L2_ave_err" u 1:2:3 w e, \
+"dat_2d_ising_L4_ave_err" u 1:2:3 w e, \
+"dat_2d_ising_L8_ave_err" u 1:2:3 w e, \
+"dat_2d_ising_L16_ave_err" u 1:2:3 w e, \
+"dat_2d_ising_L32_ave_err" u 1:2:3 w e
+pause -1

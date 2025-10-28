@@ -1,0 +1,23 @@
+set term pdf
+set output "fig_ashkin_teller.pdf"
+
+set pointintervalbox 0
+set xlabel "tanh(J_2/T)"
+set ylabel "C"
+set grid
+set key spacing 2
+p \
+"../K0.5/dat_2d_ashkin_teller_L6_ave_err"  u (tanh(1.0/$1)):16:17 w e lw 2 pt 6  lc "#E03535" ti "", \
+"../K0.5/dat_2d_ashkin_teller_L8_ave_err"  u (tanh(1.0/$1)):16:17 w e lw 2 pt 8  lc "#C22E2E" ti "", \
+"../K0.5/dat_2d_ashkin_teller_L10_ave_err" u (tanh(1.0/$1)):16:17 w e lw 2 pt 10 lc "#A12828" ti "", \
+"../K0.5/dat_2d_ashkin_teller_L12_ave_err" u (tanh(1.0/$1)):16:17 w e lw 2 pt 12 lc "#7A1F1F" ti "J_4/J_2=0.5 (L=6,8,10,12)", \
+\
+"../K1.0/dat_2d_ashkin_teller_L6_ave_err"  u (tanh(1.0/$1)):16:17 w e lw 2 pt 6  lc "#35E035" ti "", \
+"../K1.0/dat_2d_ashkin_teller_L8_ave_err"  u (tanh(1.0/$1)):16:17 w e lw 2 pt 8  lc "#2EC22E" ti "", \
+"../K1.0/dat_2d_ashkin_teller_L10_ave_err" u (tanh(1.0/$1)):16:17 w e lw 2 pt 10 lc "#28A128" ti "", \
+"../K1.0/dat_2d_ashkin_teller_L12_ave_err" u (tanh(1.0/$1)):16:17 w e lw 2 pt 12 lc "#1F7A1F" ti "J_4/J_2=1 (L=6,8,10,12)", \
+\
+"../K4.0/dat_2d_ashkin_teller_L6_ave_err"  u (tanh(1.0/$1)):16:17 w e lw 2 pt 6  lc "#3535E0" ti "", \
+"../K4.0/dat_2d_ashkin_teller_L8_ave_err"  u (tanh(1.0/$1)):16:17 w e lw 2 pt 8  lc "#2E2EC2" ti "", \
+"../K4.0/dat_2d_ashkin_teller_L10_ave_err" u (tanh(1.0/$1)):16:17 w e lw 2 pt 10 lc "#2828A1" ti "", \
+"../K4.0/dat_2d_ashkin_teller_L12_ave_err" u (tanh(1.0/$1)):16:17 w e lw 2 pt 12 lc "#1F1F7A" ti "J_4/J_2=4 (L=6,8,10,12)"
