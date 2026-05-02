@@ -1,0 +1,8 @@
+# mpirun -np 8 ./ising2d_msc_pt_openmpi --L 32 --Tmin 1.4 --Tmax 3.4 --therm 1500 --meas 1500 --skip 8 --target-c 1.0 --output outdir
+# mpirun -np 8 ./ising2d_msc_pt_openmpi --L 32 --Tmin 1.4 --Tmax 3.4 --nrep 24 --therm 1500 --meas 1500 --skip 8 --output outdir
+
+for L in \
+8 16 24 32 40 48 56 64
+do
+  mpirun -np 8 ./ising2d_msc_pt_openmpi --L ${L} --Tmin 1.4 --Tmax 3.4 --nrep 32 --therm 1500 --meas 1500 --skip 8 --output outdir_L${L}
+done
